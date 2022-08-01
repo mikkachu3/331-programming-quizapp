@@ -1,0 +1,58 @@
+<style>
+     
+  ion-item{
+    --background: #e6eef3;
+  }
+  ion-content {
+    --background: #e6eef3;
+  }
+
+  ion-toolbar{
+    --background: #e6eef3;
+  }
+  ion-header{
+    --background: #e6eef3;
+  
+  }
+
+</style>
+
+<ion-toolbar>
+  <ion-button href="homepage" > 
+    <div>
+      <ion-icon name="home" ></ion-icon>
+    </div>
+  </ion-button>
+ 
+</ion-toolbar>
+
+<ion-header>
+  <div class="head">
+      <div style="padding: 25px 20px 20px 20px; display: flex; justify-content: space-between; color: white; font-size: 22px;" >
+          <ion-icon name="menu" (click)="openFirst()"></ion-icon>
+          <ion-icon name="more"></ion-icon>
+      </div>
+        
+        <div class="contentFlex">
+          <ion-avatar style="height: 7rem; width: 7rem">
+              <ion-img src="./assets/bg.jpg"></ion-img> 
+          </ion-avatar>
+        <div class="contentFlexMargin">
+          <h2 style="font-size: 1.1rem; margin-bottom: 0; color: rgb(0, 0, 0);">Patrick Dalal</h2>
+          <p  style="font-size: 0.8rem; color:#000000;">Chercheur</p>
+        </div>    
+      </div>
+        <div style="display: flex; justify-content: space-around; margin-top: 13px;">
+          <div style="border-bottom: solid rgb(0, 0, 0); display: flex; width: 20%; justify-content: center; color: rgb(0, 0, 0);">
+            General
+          </div>   
+          <div routerLink="/tabs/profile-details" style="display: flex; width: 20%; justify-content: center;color: rgb(0, 0, 0);">
+            Details
+          </div>    
+          <div routerLink="/tabs/profile-messages" style="display: flex; width: 20%; justify-content: center;color: rgb(0, 0, 0);">
+            Messages
+          </div>   
+        </div>    
+  </div>
+</ion-header>
+
